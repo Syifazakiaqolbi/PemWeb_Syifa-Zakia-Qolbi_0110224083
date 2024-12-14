@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array dan For Loop</title>
+</head>
+<body>
+    <script>
+        //array 1 dimensi (Array Scalar)
+        let p1 = {'Nip':'111', 'Nama':'Syifa', 'Jabatan':'Manager', 'Gapok':1000000};
+        let p2 = {'Nip':'222', 'Nama':'Zakia', 'Jabatan':'CEO', 'Gapok':100000000};
+        let p3 = {'Nip':'333', 'Nama':'Qolbi', 'Jabatan':'Manager', 'Gapok':1000000};
+
+        //Array Associative
+        let pegawai = [p1,p2,p3];
+
+        //Panggil dan Loop pakai for
+        for(let p of pegawai){
+            document.write(`NIP:${p.Nip}<br> 
+            Nama:${p.Nama} <br> Jabatan:${p.Jabatan} <br> Gapok:${p.Gapok}<br><hr>`)
+        }
+    </script>
+</body>
+</html>
